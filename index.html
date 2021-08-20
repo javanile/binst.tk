@@ -146,7 +146,7 @@ read_package_json () {
 ## Install a bash package
 bpkg_install () {
   local pkg=''
-  local let needs_global=0
+  local let needs_global=1
 
   for opt in "${@}"; do
     if [[ '-' = "${opt:0:1}" ]]; then
@@ -239,8 +239,8 @@ bpkg_install_from_remote () {
   }
 
   if [[ ${#pkg_parts[@]} -eq 1 ]]; then
-    version='master'
-    #info "Using latest (master)"
+    version='main'
+    #info "Using latest (main)"
   elif [[ ${#pkg_parts[@]} -eq 2 ]]; then
     name="${pkg_parts[0]}"
     version="${pkg_parts[1]}"
