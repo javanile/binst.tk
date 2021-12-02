@@ -2,7 +2,7 @@
 
 > <b>(B)</b>inary <b>(Inst)</b>aller <b>(T)</b>ool<b>(k)</b>it - also known "BInst.Tk" 😮
 
-**BInst.Tk** is a rapid installtion tool that get packages from GitHub. With **BInst.Tk** you can install any of repositories from GitHub to you machine without lose of time.
+**BInst.Tk** is a rapid installtion tool that get packages from GitHub. With **BInst.Tk** you can install any of the repositories from GitHub to your machine without lose of time.
 
 ## Usage 
 
