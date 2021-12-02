@@ -31,7 +31,7 @@ alias binst='curl -s binst.tk/alias | sudo bash -s'
 **BInst.Tk** has no particular dependency, obviously remember that it is used to get software directly from source 
 so you will often be forced to install [GNU Make](https://www.gnu.org/software/make/) before starting.
 
-## TL;DR
+## Credits
 
 ### Contributing
 
