@@ -6,7 +6,7 @@
 
 ## Usage 
 
-BInst.Tk could be used without install, like this
+**BInst.Tk** could be used without install, to get Docker from <https://github.com/docker/docker> just type the following
 
 ```shell
 curl -s binst.tk | sudo bash -s docker/docker
@@ -14,6 +14,10 @@ curl -s binst.tk | sudo bash -s docker/docker
 
 ## Install
 
+**BInst.Tk** not is a resident script, the most annoyance we can give you is creating an alias in your shell. Just run the following command
+
 ```shell
 curl -s binst.tk/alias | bash
 ```
+
+It create an alias into your favorite profile file
