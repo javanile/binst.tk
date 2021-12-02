@@ -9,7 +9,7 @@
 BInst.Tk could be used without install, like this
 
 ```shell
-curl -s binst.tk | bash -s docker/docker
+curl -s binst.tk | sudo bash -s docker/docker
 ```
 
 ## Install
