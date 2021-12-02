@@ -43,7 +43,7 @@ In order to ensure that the Javanile community is welcoming to all, please revie
 
 ### Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Francesco Bianco via [bianco@javanile.org](mailto:bianco@javanile.org). All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within Javanile, please send an e-mail to Francesco Bianco via [bianco@javanile.org](mailto:bianco@javanile.org). All security vulnerabilities will be promptly addressed.
 
 ### License
 
