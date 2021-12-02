@@ -26,6 +26,12 @@ It create an alias into your favorite shell profile file, somethig like that
 alias binst='curl -s binst.tk/alias | sudo bash -s'
 ```
 
+After that you just run the following command
+
+```shell
+binst docker/docker
+```
+
 ## Requirements
 
 **BInst.Tk** has no particular dependency, obviously remember that it is used to get software directly from source 
