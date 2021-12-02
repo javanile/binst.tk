@@ -35,11 +35,11 @@ so you will often be forced to install [GNU Make](https://www.gnu.org/software/m
 
 ### Contributing
 
-Thank you for considering contributing to this project! The contribution guide can be found in the [CONTRIBUTING.md](docs/CONTRIBUTING.md).
+Thank you for considering contributing to this project! The contribution guide can be found in the [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ### Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](docs/CONTRIBUTING.md#code-of-conduct).
+In order to ensure that the Javanile community is welcoming to all, please review and abide by the [Code of Conduct](CONTRIBUTING.md#code-of-conduct).
 
 ### Security Vulnerabilities
 
