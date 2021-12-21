@@ -3,17 +3,19 @@
 home=$HOME
 shell=$SHELL
 uname=$(uname)
+uname_a=$(uname -a)
 profile=.profile
-pre_sudo=sudo
-post_sudo=sudo
+pre_sudo="sudo "
+post_sudo="sudo "
 
 [ "$uname" = "Darwin" ] && shell=bash
 [ "$SHELL" = "/bin/zsh" ] && profile=.zshrc
+[ -n "$(echo $uname_a | grep Ubuntu)" ] && pre_sudo=
 
 if grep -q "//binst.tk" "$home/$profile" 2> /dev/null; then
-  echo "The 'binst' alias was previously reported into your '~$profile' file."
+  echo "The 'binst' alias was previously reported into your '~/$profile' file."
 else
-  echo "alias binst='$pre_sudo curl -s https://binst.tk | $post_sudo $shell -s --'" >> $home/$profile
+  echo "alias binst='${pre_sudo}curl -s https://binst.tk | ${post_sudo}$shell -s --'" >> $home/$profile
 fi
 
-echo "Restart your shell or type 'source ~$profile' to load it."
+echo "Restart your shell or type 'source ~/$profile' to load it."
