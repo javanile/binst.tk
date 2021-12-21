@@ -1,5 +1,7 @@
 #!/bin/sh
 
-profile=~.profile
+home=$HOME
+profile=.profile
+[ "$SHELL" = "/bin/zsh" ] && profile=.zshrc
 
-echo "alias 'curl -s https://binst.tk | $SHELL -s'" >> $profile
+echo "alias binst='curl -s https://binst.tk | $SHELL -s'" >> $home/$profile
