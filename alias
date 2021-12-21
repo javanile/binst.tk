@@ -10,4 +10,4 @@ else
   echo "alias binst='curl -s https://binst.tk | $SHELL -s'" >> $home/$profile
 fi
 
-echo "Restart your shell or type 'source ~$profile' to load the 'binst' alias"
+echo "Restart your shell or type 'source ~$profile' to load it."
