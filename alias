@@ -2,11 +2,13 @@
 
 home=$HOME
 shell=$SHELL
+uname=$(uname)
 profile=.profile
 pre_sudo=sudo
 post_sudo=sudo
 
 [ "$SHELL" = "/bin/zsh" ] && profile=.zshrc
+[ "$uname" = "Darwin" ] && shell=bash
 
 if grep -q "//binst.tk" "$home/$profile"; then
   echo "The 'binst' alias was previously reported into your '~$profile' file"
