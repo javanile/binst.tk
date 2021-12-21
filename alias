@@ -1,13 +1,17 @@
 #!/bin/sh
 
 home=$HOME
+shell=$SHELL
 profile=.profile
+pre_sudo=sudo
+post_sudo=sudo
+
 [ "$SHELL" = "/bin/zsh" ] && profile=.zshrc
 
 if grep -q "//binst.tk" "$home/$profile"; then
   echo "The 'binst' alias was previously reported into your '~$profile' file"
 else
-  echo "alias binst='curl -s https://binst.tk | $SHELL -s'" >> $home/$profile
+  echo "alias binst='$pre_sudo curl -s https://binst.tk | $post_sudo $shell -s'" >> $home/$profile
 fi
 
 echo "Restart your shell or type 'source ~$profile' to load it."
