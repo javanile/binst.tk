@@ -4,4 +4,10 @@ home=$HOME
 profile=.profile
 [ "$SHELL" = "/bin/zsh" ] && profile=.zshrc
 
-echo "alias binst='curl -s https://binst.tk | $SHELL -s'" >> $home/$profile
+if grep -q "//binst.tk" "$home/$profile"; then
+  echo "The 'binst' alias was previously reported into your '~$profile' file"
+else
+  echo "alias binst='curl -s https://binst.tk | $SHELL -s'" >> $home/$profile
+fi
+
+echo "Restart your shell or type 'source ~$profile' to load the 'binst' alias"
