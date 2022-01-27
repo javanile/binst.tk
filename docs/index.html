@@ -1,4 +1,6 @@
 #!/bin/bash
+#<html><head><link rel="stylesheet" href="mvp.css"></head>
+#<body><h1>BInst.Tk</h1><code>
 
 # Include config rc file if found
 CONFIG_FILE="$HOME/.bpkgrc"
@@ -286,7 +288,7 @@ bpkg_install_from_remote () {
     auth_param="$token:x-oauth-basic"
     uri="/${user}/${name}/raw/${version}"
     ## If git remote is a URL, and doesn't contain token information, we
-    ## inject it into the <user>@host field
+    ## inject it into the <code>@host field
     if [[ "$git_remote" == https://* ]] && [[ "$git_remote" != *x-oauth-basic* ]] && [[ "$git_remote" != *${token}* ]]; then
       git_remote=${git_remote/https:\/\//https:\/\/$token:x-oauth-basic@}
     fi
@@ -473,3 +475,5 @@ else
   #param validation failed
   exit $?
 fi
+
+#</code></html>
