@@ -1,6 +1,6 @@
 #!/bin/bash
 #<html><head><link rel="stylesheet" href="mvp.css"></head>
-#<body><h1>BInst.Tk</h1><code>
+#<body><main><h1>BInst.Tk</h1><pre><code>
 
 # Include config rc file if found
 CONFIG_FILE="$HOME/.bpkgrc"
@@ -28,7 +28,7 @@ validate_parameters () {
 usage () {
   echo 'usage: bpkg-install [-h|--help]'
   echo '   or: bpkg-install [-g|--global] <package>'
-  echo '   or: bpkg-install [-g|--global] <user>/<package>'
+  echo '   or: bpkg-install [-g|--global] <main>/<pre>'
 }
 
 ## format and output message
@@ -476,4 +476,4 @@ else
   exit $?
 fi
 
-#</code></html>
+#</code></pre></main></html>
